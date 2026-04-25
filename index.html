@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laurindo Dumba - DATA ENGINEER</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo"></div>
+    <ul class="nav-links">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="eventos.html">EVENTS</a></li>
+      <li><a href="http://lattes.cnpq.br/9000819777470182">LATTES</a></li>
+      <li><a href="https://medium.com/@dumbalvd">MEDIUM</a></li>
+    </ul>
+    <div class="nav-socials">
+      <a href="https://linkedin.com/in/laurindo-dumba-45b214102/" class="social-icon" title="LinkedIn">in</a>
+      <a href="https://github.com/laurindodumba" class="social-icon" title="GitHub">GitHub</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="title">DATA ENGINEER</div>
+      <h1>Laurindo Dumba</h1>
+      <p>I´m Data Engineer on experience at +4 years in Cloud AZURE and AWS. I have Experience as a Data Engineer, designing and Optimizing ETL Pipelines to integrate data from multiple sources, and as a Data Science building anomaly detection models for temperature sensors and predictive models for credit Scoring.</p>
+      <p>My technical stack includes:</p>
+      <p><strong>AZURE:</strong> Data Factory, Synapse Analytics, IOT HUB, Azure ML, Databricks, Devops and Azure SQL</p>
+      <p><strong>AWS:</strong> S3, EC2, SageMaker, EMR, RedShift</p>
+      <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Talk to me →</button>
+    </div>
+    <div class="hero-image">
+      <div class="image-circle">
+        <img src="foto/foto.png" alt="Laurindo Dumba" style="width: 350px; height: auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-icon"></div>
+        <h3>DATA PIPELINE</h3>
+        <p>Create data pipeline and build Data Products using modern cloud technologies.</p>
+        <div class="project-tags">
+          <span class="tag">PySpark</span>
+          <span class="tag">Databricks</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Azure Blob Storage</span>
+          <a href="https://github.com/laurindodumba/AZURE-GLOBAL">Access Projects</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon"></div>
+        <h3>Financial Applications</h3>
+        <p>Personal financial management platform with charts, budgets, and real-time expense analysis.</p>
+        <div class="project-tags">
+          <span class="tag">Kotlin</span>
+          <span class="tag">Jetpack Compose</span>
+          <span class="tag">SQL Lite</span>
+          <a href="https://github.com/laurindodumba/Aplicativo-Financeiro-Zimbogo">Access Projects</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon"></div>
+        <h3>Databricks Medallion</h3>
+        <p>Build layer Medallion structure using Databricks with Brazilian E-Commerce dataset.</p>
+        <div class="project-tags">
+          <span class="tag">Databricks</span>
+          <span class="tag">PySpark</span>
+          <span class="tag">GitHub</span>
+          <a href="https://github.com/laurindodumba/-Databricks-Medallion---Brazilian-E-Commerce-Public-Dataset-by-Olist-">Access Projects</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon"></div>
+        <h3>Scoring Credit Pod Bank</h3>
+        <p>Build Web Application with scoring risk credit using machine learning models.</p>
+        <div class="project-tags">
+          <span class="tag">Databricks</span>
+          <span class="tag">PySpark</span>
+          <span class="tag">GitHub</span>
+          <a href="https://github.com/laurindodumba/-Databricks-Medallion---Brazilian-E-Commerce-Public-Dataset-by-Olist-">Access Projects</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon"></div>
+        <h3>Client Segmentation</h3>
+        <p>Segmentation Client of Safe Driver Prediction using clustering algorithms.</p>
+        <div class="project-tags">
+          <span class="tag">Databricks</span>
+          <span class="tag">Python</span>
+          <span class="tag">GitHub</span>
+          <a href="https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-SEGMENTACAO">Access Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-container">
+      <h2>CONTATOS</h2>
+      <div class="contact-buttons">
+        <a href="mailto:dumbalvd@email.com" class="contact-btn">Email</a>
+        <a href="https://linkedin.com/in/laurindo-dumba-45b214102/" class="contact-btn">LinkedIn</a>
+        <a href="https://github.com/laurindodumba" class="contact-btn">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Laurindo Dumba. Todos os direitos reservados. Desenvolvido com 💙</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href !== '#' && document.querySelector(href)) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add scroll animation for elements
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.project-card').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'all 0.6s ease-out';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
